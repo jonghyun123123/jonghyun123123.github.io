@@ -1,0 +1,274 @@
+@charset "utf-8";
+
+/* font 설정 */
+@font-face {
+  font-family: ball2;
+  src: url(../font/a발레리노.woff);
+}
+/* 파크 티켓 전체 박스 설정 */
+#wrap {
+  width: 80%;
+  margin: auto;
+  height: 1600px;
+  background-color: transparent;
+  color: #666;
+  padding-top: 200px;
+}
+
+/* 파크 티켓 제목 */
+#wrap h2.main--title {
+  width: 100%;
+  height: 10px;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+}
+#wrap h2.main--title span {
+  padding-left: 10px;
+}
+#wrap h2.main--title img {
+  width: 50px;
+  height: 40px;
+}
+
+/* 부제목 공통 적용 */
+.sub--title {
+  display: flex;
+  margin-top: 20px;
+  font-family: ball2;
+  font-size: 40px;
+}
+
+/* 날짜에 따른 파크 티켓가격 */
+section.date--ticket {
+  width: 80%;
+  height: 400px;
+  margin: 30px auto 0;
+  position: relative;
+}
+
+.date--ticket h2{margin-top: 40px;}
+
+.sub--title p{padding-top: 20px; padding-left: 20px;}
+section.date--ticket > div {
+  font-size: 16px;
+  padding-left: 50px;
+}
+.date__right{padding-left: 800px;}
+
+.date__right span.box{border: 1px solid #999; width: 25px; height: 25px; display: inline-block; margin: 0 10px; border-radius: 5px;}
+.date__right span.box1 {background-color: palegreen;}
+.date__right span.box2 {background-color: palegoldenrod;}
+.date__right span.box3 {background-color: gold;}
+.date__right span.box4 {background-color: yellow;}
+
+section.date--ticket > div .date--ticket__month {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 2px;
+  font-size: 18px;
+}
+section.date--ticket > div .date--ticket__month:first-child {
+  margin-left: 5px;
+}
+section.date--ticket > div .date--ticket__month:nth-child(2) {
+  margin: 0 3px;
+}
+section.date--ticket div.calendar{
+  margin-top: 20px;
+}
+
+.date__right{
+  margin-left: 50px;
+  padding-top: 30px;
+}
+
+section.date--ticket div.calendar table{
+  width: 100%;
+  height: 250px;
+  margin: auto;
+  position: absolute;
+}
+
+section.date--ticket div.calendar table tr td,
+section.date--ticket div.calendar table tr th{
+  width: 150px;
+}
+
+section.date--ticket div.calendar table tr th{
+  color: #fff; background-color: #86bdf0;
+  text-align: center;
+  border-radius: 5px;
+}
+
+section.date--ticket div.calendar table tr td{
+  color: #000; padding: 0 0 20px 10px;
+  border-radius: 10px;
+}
+
+/* 테이블 셀별 색 */
+.tabel__color1{background-color: palegreen;}
+.tabel__color2{background-color: palegoldenrod;}
+.tabel__color3{background-color: gold;}
+.tabel__color4{background-color: yellow;}
+
+/* 버튼 클릭 효과 */
+
+.is_on1 .btn1{font-weight: bold; background-color: #ffd662; box-shadow: 1px 3px 3px inset #666, 3px 3px 3px #666;}
+
+/* 날짜 버튼 클릭시 팝업 */
+.tab_menu1{
+  display: flex;
+}
+.cont1 {display: none;}
+div.is_on1 .cont1 {display: block;}
+
+/* 테이블 중앙 맞추기 */
+.table1 {padding-left: 220px;}
+.table2 {padding-left: 166px;}
+.table3 {padding-left: 111px;}
+
+/* 티켓 종류에 따른 파크 티켓가격 */
+section.class--ticket {
+  width: 90%;
+  height: 400px;
+  margin: 130px auto 0;
+}
+
+section.class--ticket h2{font-size: 40px; margin: 50px 10px;}
+section.class--ticket .tab_menu {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+section.class--ticket ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+section.class--ticket ul li a {
+  font-size: 20px;
+  width: 300px;
+  height: 50px;
+  background-color: #ffd662;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 10px;
+}
+
+/* 1일권 */
+
+section.class--ticket ul.class--ticket__sub li ul.age {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.age img{display: block;text-align: center; width: 100px; padding-left: 20px;}
+.age__text{font-size: 22px; font-weight: bold;}
+section.class--ticket ul.class--ticket__sub li ul.age li {
+  text-align: center;
+  border: 5px solid #86bdf0;
+  border-radius: 15px;
+  padding: 40px 60px;
+}
+
+/* 입장시간지정권 */
+
+section.class--ticket .timetable {
+  position: absolute;
+  top: 70px;
+  right: 180px;
+  width: 80%;
+  height: 220px;
+  text-align: center;
+  border-collapse: collapse;
+  border: 3px solid #666;
+}
+
+section.class--ticket .timetable tr th ,
+section.class--ticket .timetable tr td 
+{ width: 20px;height: 20px;
+  border: 3px solid #666;
+  line-height: 20px;
+}
+
+.timetable .bg{background-color: rgba(134, 189, 240,0.4); height: 40px; position: relative; padding-left: 20px;}
+.timetable .bg img{display: block; position: absolute; top: 8px; height: 40px;}
+/* 장애가 있는분 전용티켓 */
+
+.disab{
+  position: absolute;
+  right: 1px;
+}
+
+/* 버튼 클릭 효과 */
+
+.is_on .btn{font-weight: bold; background-color: #F9A836; box-shadow: 5px 5px 5px inset #333, 5px 5px 5px #333; margin-bottom: 30px;}
+
+/* 티켓 종류에 따른 파크 티켓가격 버튼 클릭시 팝업 */
+
+.cont {
+  display: none;
+}
+li.is_on .cont {
+  display: block;
+}
+
+/* 티켓 구매 방법 */
+
+.buy--ticket{
+  width: 100%;margin-top: 70px;
+}
+/* 티켓 구매 방법 제목 */
+.buy--ticket h2{
+  margin: 50px 0px 50px 180px
+}
+/* 티켓 구매 전체 박스 */
+ .buy--total{
+  display: flex;
+ }
+
+ /* 티켓 구매 왼쪽 부분 */
+ .buy--left{width: 50%;}
+ .buy--text{font-size: 22px; font-weight: 600; margin-bottom: 30px; padding-left: 300px;}
+ 
+ /* 티켓 구매 왼쪽 표 */
+
+ .buy--total table{width: 600px;height: 300px; margin: auto; border-collapse: collapse;}
+ .buy--total td,
+ .buy--total th{padding: 20px; text-align: center; border: 1px solid #86bdf0;}
+ .buy--total th{background-color: rgba(134, 189, 240,0.4);}
+
+ /* 티켓 구매 오른쪽 부분 */
+ .buy--right{width: 50%;}
+ .text__height{padding-bottom: 10px; margin-left: 70px;}
+ .buy--text1{display: flex; margin-top: 20px; margin-left: 70px;}
+ .buy--text1 p{padding-left: 20px; padding-top: 10px; font-size: 19px; color: red;}
+ .buy--right>div:last-child{margin-top: 20px;}
+
+ /* 유의사항 */
+ .notice { width: 80%; margin: auto; position: relative; margin-bottom: 30px;}
+ .notice h2{margin-bottom: 40px;}
+ .notice ul li{margin: 5px 0;}
+
+ /* 유의사항 온라인으로 변경 가능 호버 효과*/
+ .notice__text{text-decoration: underline; font-weight: bold; font-size: 16px; color: red; margin-left: 5px;}
+ .effect {display: flex;}
+ .effect a{margin-left: 15px;}
+ .effect1{position: absolute; width: 47%; background-color: rgba(134, 189, 240,0.3); right: 10px; display: none;}
+ .effect a:hover .effect1{display: block;}
+ .effect1 li.text2{display: flex;}
+ .text2 img{margin-right: 15px;}
+
+ /* 푸터영역 */
+ footer{width: 100%; height: 200px;}
+ footer div{background-color: rgba(134, 189, 240, 0.3); height: 200px;}
