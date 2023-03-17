@@ -1,0 +1,10 @@
+{
+        name:"JongHyun KIM",
+        userImage:"https://jonghyun123123.github.io/imgs/d.png",
+        postImage:"https://jonghyun123123.github.io/imgs/a.png",
+        likes:45,
+        date:"July 25",
+        liked:false,
+        content:"더보기3",
+        filter:"perpetua"
+    }
