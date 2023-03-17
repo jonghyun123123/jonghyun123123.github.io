@@ -1,0 +1,10 @@
+{
+        name:'JongHyun KIM',
+        userImage:'https://jonghyun123123.github.io/imgs/d.png',
+        postImage:'https://jonghyun123123.github.io/imgs/b.png',
+        likes:55,
+        date:new Date().toLocaleDateString(),
+        liked:false,
+        content:'더보기로 요청한 게시물2입니다',
+        filter:'perpetua'
+    }
