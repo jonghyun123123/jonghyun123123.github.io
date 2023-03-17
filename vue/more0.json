@@ -3,7 +3,7 @@
         "userImage":"https://jonghyun123123.github.io/imgs/d.png",
         "postImage":"https://jonghyun123123.github.io/imgs/a.png",
         "likes":45,
-        "date":"new Date().toLocaleDateString()",
+        "date":"July 25",
         "liked":false,
         "content":"디즈니 랜드 ~!~!~!",
         "filter":"perpetua"
